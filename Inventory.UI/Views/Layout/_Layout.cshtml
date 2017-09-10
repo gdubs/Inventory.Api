@@ -1,0 +1,53 @@
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Inventory Project</title>
+    <link href="@Url.Content("~/css/site.css")" rel="stylesheet" />
+    <link href="~/vendor/bootstrap.css" rel="stylesheet" />
+    <link href="~/vendor/journal_theme.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="wrap" class="fixed-nav">
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Inventory Project</a>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/">Home</a></li>
+                    <!-- <li><a href="/shelves">Shelves</a></li>
+                    <li><a href="/">Reports</a></li> -->
+                </ul>
+            </div>
+        </nav>
+        <div class="container" style="padding: 20px 0 0 0;">
+            <div class="col-md-2" id="app.menu">
+            </div>
+            <div class="col-md-10">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.2/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remarkable/1.7.1/remarkable.min.js"></script>
+
+<script src="@Url.Content("~/js/built/layout.bundle.js")"></script>
+    @RenderSection("scripts", false)
+</body>
+</html>
